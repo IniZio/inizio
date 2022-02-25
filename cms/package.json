@@ -1,0 +1,27 @@
+{
+  "name": "cms",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "dev": "pnpm develop",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/strapi": "4.1.1",
+    "@strapi/plugin-users-permissions": "4.1.1",
+    "@strapi/plugin-i18n": "4.1.1",
+    "sqlite3": "5.0.2"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "e65238e6-111c-428f-9c94-84c2e0264d05"
+  },
+  "license": "MIT"
+}
