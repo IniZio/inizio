@@ -1,5 +1,10 @@
 {
- "packageManager": "pnpm@6.31.0",
+  "private": true,
+  "packageManager": "yarn@1.22.17",
+  "workspaces": [
+    "app",
+    "cms"
+  ],
   "scripts": {
     "dev": "turbo run dev --parallel --no-cache",
     "build": "turbo run build"

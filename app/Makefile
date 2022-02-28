@@ -1,7 +1,7 @@
 .PHONY: vendor
 
 vendor:
-	pnpm i
+	yarn
 
 dev:
-	pnpm dev
+	yarn dev
