@@ -14,8 +14,7 @@
           "image"
         ],
         "locales": [
-          "en",
-          "zh-Hant-HK"
+          "en"
         ]
       },
       "conditions": []
@@ -25,8 +24,7 @@
       "subject": "api::post.post",
       "properties": {
         "locales": [
-          "en",
-          "zh-Hant-HK"
+          "en"
         ]
       },
       "conditions": []
@@ -36,8 +34,7 @@
       "subject": "api::post.post",
       "properties": {
         "locales": [
-          "en",
-          "zh-Hant-HK"
+          "en"
         ]
       },
       "conditions": []
@@ -53,8 +50,7 @@
           "image"
         ],
         "locales": [
-          "en",
-          "zh-Hant-HK"
+          "en"
         ]
       },
       "conditions": []
@@ -70,8 +66,7 @@
           "image"
         ],
         "locales": [
-          "en",
-          "zh-Hant-HK"
+          "en"
         ]
       },
       "conditions": []
