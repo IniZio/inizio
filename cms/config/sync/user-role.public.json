@@ -4,6 +4,12 @@
   "type": "public",
   "permissions": [
     {
+      "action": "api::post.post.find"
+    },
+    {
+      "action": "api::post.post.findOne"
+    },
+    {
       "action": "plugin::users-permissions.auth.callback"
     },
     {

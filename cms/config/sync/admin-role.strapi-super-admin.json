@@ -8,10 +8,14 @@
       "subject": "api::post.post",
       "properties": {
         "fields": [
-          "content"
+          "content",
+          "title",
+          "slug",
+          "image"
         ],
         "locales": [
-          "en"
+          "en",
+          "zh-Hant-HK"
         ]
       },
       "conditions": []
@@ -21,7 +25,8 @@
       "subject": "api::post.post",
       "properties": {
         "locales": [
-          "en"
+          "en",
+          "zh-Hant-HK"
         ]
       },
       "conditions": []
@@ -31,7 +36,8 @@
       "subject": "api::post.post",
       "properties": {
         "locales": [
-          "en"
+          "en",
+          "zh-Hant-HK"
         ]
       },
       "conditions": []
@@ -41,10 +47,14 @@
       "subject": "api::post.post",
       "properties": {
         "fields": [
-          "content"
+          "content",
+          "title",
+          "slug",
+          "image"
         ],
         "locales": [
-          "en"
+          "en",
+          "zh-Hant-HK"
         ]
       },
       "conditions": []
@@ -54,10 +64,14 @@
       "subject": "api::post.post",
       "properties": {
         "fields": [
-          "content"
+          "content",
+          "title",
+          "slug",
+          "image"
         ],
         "locales": [
-          "en"
+          "en",
+          "zh-Hant-HK"
         ]
       },
       "conditions": []
