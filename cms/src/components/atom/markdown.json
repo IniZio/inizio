@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_atom_markdowns",
+  "info": {
+    "displayName": "Markdown",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "richtext"
+    }
+  }
+}
