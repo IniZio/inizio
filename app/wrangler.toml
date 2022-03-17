@@ -1,0 +1,14 @@
+name = "inizio"
+type = "javascript"
+account_id = "dee35dc4d4d536255f16ce5afbf0b662"
+workers_dev = true
+route = ""
+zone_id = ""
+
+[site]
+bucket = ".output/public"
+entry-point = ".output"
+
+[build]
+command = "true"
+upload.format = "service-worker"

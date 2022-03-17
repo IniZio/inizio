@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     'nuxt-windicss',
     '@nuxtjs/strapi'
   ],
-  publicRuntimeConfig: {
+  env: {
     STRAPI_URL,
   },
   meta: {
@@ -31,5 +31,5 @@ export default defineNuxtConfig({
     "uikit/dist/css/uikit.min.css",
     "uikit/dist/css/uikit.css",
     "~/assets/css/main.css",
-  ]
+  ],
 })
