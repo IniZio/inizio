@@ -18,6 +18,40 @@ jobs:
         filters: |
           cms:
             - 'cms/**'
+          app:
+            - 'app/**'
+
+  deploy-app:
+      name: Deploy App
+      needs: changes
+      if: ${{ needs.changes.outputs.app == 'true' }}
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/setup-node@v1
+          with:
+            node-version: 16.14.0
+        - name: Checkout
+          uses: actions/checkout@master
+        - name: Cache node_modules
+          uses: actions/cache@v2
+          with:
+            path: node_modules
+            key: app-node_modules-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
+        - name: Install Dependencies
+          if: steps.cache.outputs.cache-hit != 'true'
+          run: yarn
+        - name: Build
+          working-directory: ./app
+          run: yarn build
+          env:
+            NITRO_PRESET: cloudflare
+            STRAPI_URL: ${{ secrets.STRAPI_URL }}
+        - name: Publish to Cloudflare
+          uses: cloudflare/wrangler-action@1.3.0
+          with:
+            apiToken: ${{ secrets.CF_API_TOKEN }}
+            workingDirectory: app
+
   deploy-cms:
       name: Deploy CMS
       needs: changes
@@ -25,6 +59,11 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v2
+        - name: Cache node_modules
+          uses: actions/cache@v2
+          with:
+            path: node_modules
+            key: cms-node_modules-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
         - name: postdeploy
           uses: jrmcdonald/blackbox-github-actions@v0.2.0
           with:
