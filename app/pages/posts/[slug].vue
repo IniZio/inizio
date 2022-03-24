@@ -33,11 +33,12 @@
 const strapi = useStrapi4();
 
 const { $md } = useNuxtApp();
+const route = useRoute()
 
 const { data: post } = useAsyncData("post", async () => {
   const matchingPosts = await strapi.find("posts", {
     filters: {
-      slug: "first-post",
+      slug: route.params.slug,
     },
     populate: ["image", "content"],
   });
