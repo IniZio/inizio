@@ -20,7 +20,7 @@ export default defineNuxtConfig({
     link: [
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=Staatliches",
+        href: "https://fonts.googleapis.com/css?family=Staatliches&display=swap",
       },
     ],
   },
@@ -28,8 +28,7 @@ export default defineNuxtConfig({
    ** Global CSS
    */
   css: [
-    "uikit/dist/css/uikit.min.css",
-    "uikit/dist/css/uikit.css",
+    process.env.NODE_ENV === "development" ? "uikit/dist/css/uikit.css" : "uikit/dist/css/uikit.min.css",
     "~/assets/css/main.css",
   ],
 })
