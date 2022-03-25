@@ -106,7 +106,20 @@
       }
     },
     "layouts": {
+      "list": [
+        "id",
+        "title",
+        "slug",
+        "image"
+      ],
+      "editRelations": [],
       "edit": [
+        [
+          {
+            "name": "content",
+            "size": 12
+          }
+        ],
         [
           {
             "name": "title",
@@ -122,20 +135,7 @@
             "name": "image",
             "size": 6
           }
-        ],
-        [
-          {
-            "name": "content",
-            "size": 12
-          }
         ]
-      ],
-      "editRelations": [],
-      "list": [
-        "id",
-        "title",
-        "slug",
-        "image"
       ]
     }
   },
