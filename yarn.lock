@@ -11936,6 +11936,13 @@ strapi-plugin-config-sync@^1.0.0-beta.8:
     redux-immutable "^4.0.0"
     redux-thunk "^2.3.0"
 
+strapi-plugin-slugify@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-slugify/-/strapi-plugin-slugify-2.2.1.tgz#0a1a91612ac288868383954c76b12843ee62f04a"
+  integrity sha512-MJqTmXTB8LsY51TEQsjFZSNjoOzK+kjqsrAXuJ5w7Z11bd4OTv+Y2TxQ2TsubsAwJBqVcO7F4nyMGoVXRj3mpQ==
+  dependencies:
+    "@sindresorhus/slugify" "1.1.0"
+
 stream-browserify@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/stream-browserify/-/stream-browserify-3.0.0.tgz#22b0a2850cdf6503e73085da1fc7b7d0c2122f2f"
